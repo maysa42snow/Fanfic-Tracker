@@ -50,5 +50,5 @@ So I made this thing to organize my chaos and keep track of my hyperfixations.
 
 ---
 
-**Made with love and way too many sleepl nights.** ☕  
+**Made with love and way too many sleepless nights.** ☕  
 Feel free to fork, remix, or just use it to stay organized 🫶
