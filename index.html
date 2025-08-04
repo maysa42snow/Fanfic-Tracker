@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fanfic Tracker</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>📚 Fanfic Tracker</h1>
+
+  <!-- Dark Mode Toggle -->
+  <button id="toggle-theme">🌙 Dark Mode</button>
+
+  <section id="add-fic">
+    <h2>Add New Fic</h2>
+    <form id="fic-form">
+      <input type="text" id="title" placeholder="Title" required />
+      <input type="url" id="url" placeholder="AO3 URL" required />
+      <input type="text" id="author" placeholder="Author" required />
+      <input type="text" id="ship" placeholder="Ship" required />
+      <input type="number" id="chapters" placeholder="Chapters" required />
+      <input type="number" id="words" placeholder="Word Count" required />
+      <textarea id="summary" placeholder="Summary"></textarea>
+      <textarea id="notes" placeholder="Notes"></textarea>
+      <button type="submit">Add Fic</button>
+    </form>
+  </section>
+
+  <section id="filters">
+    <h2>Filter</h2>
+    <select id="filterShip"></select>
+    <select id="filterSize">
+      <option value="">All Sizes</option>
+      <option value="Short">Short</option>
+      <option value="Medium">Medium</option>
+      <option value="Long">Long</option>
+    </select>
+    <select id="filterStatus">
+      <option value="">All Statuses</option>
+      <option value="To Read">To Read</option>
+      <option value="Reading">Reading</option>
+      <option value="Complete">Complete</option>
+    </select>
+  </section>
+
+  <section id="fic-list">
+    <h2>Fic List</h2>
+    <div id="fics"></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
