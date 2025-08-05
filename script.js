@@ -8,8 +8,8 @@ const toggleTheme = document.getElementById("toggle-theme");
 let fics = JSON.parse(localStorage.getItem("fics")) || [];
 
 function getSizeCategory(words) {
-  if (words < 10000) return "Short";
-  if (words <= 50000) return "Medium";
+  if (words < 20000) return "Short";
+  if (words <= 100000) return "Medium";
   return "Long";
 }
 
